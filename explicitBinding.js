@@ -6,7 +6,7 @@ function otherClass() {
   const myContext = {
     teacher: "Ana",
   };
-  Ask.call(myContext, "Que es el binding explícito?");
+  ask.call(myContext, "Que es el binding explícito?");
 }
 
 otherClass();

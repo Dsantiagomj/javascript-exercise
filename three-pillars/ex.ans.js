@@ -22,7 +22,7 @@ function loadBooks(bookshelf) {
     for (let bookName of booksNames) {
       bookshelf.addFavoriteBook(bookName);
     }
-    printFavoriteBooks();
+    bookshelf.printFavoriteBooks();
   });
 }
 
@@ -34,6 +34,7 @@ loadBooks(myBooks);
 
 // NOTE: don't modify this function at all
 function fakeAjax(url, cb) {
+  console.log(url);
   setTimeout(function fakeLoadingDelay() {
     cb([
       "A Song of Ice and Fire",
